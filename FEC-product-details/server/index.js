@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./database');
 
+
 const server = express();
 server.use(express.static(`${__dirname}/../client/dist`));
 server.use(bodyParser.json());

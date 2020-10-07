@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Carousel from './carousel';
 import PageButton from './pagebutton';
 
+// const URL = 'http://localhost:1234';
+
 class Recommended extends React.Component {
   constructor(props) {
     super(props);

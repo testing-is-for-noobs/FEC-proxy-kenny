@@ -4,6 +4,8 @@ import styles from './style.css';
 import GalleryItemList from './GalleryItemList';
 import Gallery from './Gallery';
 
+// const URL = 'http://localhost:1420';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -145,7 +147,6 @@ class App extends React.Component {
     } = this.state;
     return (
       <div className={styles.app}>
-        <h1>Gallery MaN gOd B</h1>
         <div className={styles.galleries_container}>
           <GalleryItemList
             galleryImages={galleryImages}
