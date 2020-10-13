@@ -32,7 +32,7 @@ function App() {
   ];
 
   //pagination logic
-  const postPerPage = 4;
+  const postPerPage = 3;
   const [post, setPost] = useState({
     post: currentReviews.slice(0, postPerPage),
     page: 1,
@@ -41,7 +41,7 @@ function App() {
   const [pageNumbers, setPageNumbers] = useState([]);
 
   useEffect(() => {
-    axios.get('/27/reviews')
+    axios.get('/81/reviews')
       .then((initialState) => {
         setCurrentProduct(initialState.data.products[0]);
         setCurrentReviews(initialState.data.reviews);
@@ -77,12 +77,12 @@ function App() {
     border: none;
     cursor: pointer;
     width: 100%;
+    padding: 20px 10px;
   `;
 
   const TextWrap = styled.div`
     display: flex;
-    width: 91%;
-    padding: 20px 10px;
+    width: 79rem;
     margin: 0 auto;
   `;
 
